@@ -1,6 +1,6 @@
 package com.knoldus
 
-object Email {
+object Email extends App {
   def email(mail:String): String ={
     val email = """(^[A-Za-z0-9][A-Za-z0-9]*)@((?:[A-Za-z0-9]+\.)+[A-Za-z]{2,63}$)""".r
     mail match{
@@ -9,5 +9,5 @@ object Email {
     }
   }
 
-  email("muskan@knoldus.com")
+  println(email("muskan@knoldus.com"))
 }
